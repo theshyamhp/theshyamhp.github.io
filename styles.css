@@ -99,10 +99,14 @@ footer p {
 }
 
 /* Forms (Optional if you have Contact page) */
+/* Center the Contact Form */
 form {
     max-width: 600px;
     margin: 2rem auto;
-    text-align: left;
+    text-align: center;
+    background-color: #2c2c2c;
+    padding: 2rem;
+    border-radius: 8px;
 }
 
 form label {
@@ -110,6 +114,8 @@ form label {
     margin-top: 1rem;
     font-size: 1.2rem;
     font-weight: bold;
+    color: #b5a56a;
+    text-align: left;
 }
 
 form input, form select, form textarea {
@@ -119,6 +125,7 @@ form input, form select, form textarea {
     border: none;
     background-color: #ccc;
     border-radius: 4px;
+    font-size: 1rem;
 }
 
 form button {
@@ -134,4 +141,32 @@ form button {
 
 form button:hover {
     background-color: #a38f4b;
+}
+
+/* Center the Highly Rated List */
+.highly-rated-section {
+    max-width: 900px;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.highly-rated-section h2 {
+    color: #b5a56a;
+    margin-bottom: 1rem;
+}
+
+.highly-rated-section ol {
+    text-align: left;
+    padding-left: 2rem;
+    color: #b5a56a;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.genre-select {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background-color: #ccc;
+    border: none;
+    font-size: 1rem;
 }
