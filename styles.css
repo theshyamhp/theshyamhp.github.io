@@ -71,10 +71,11 @@ main section {
 /* Movie Galleries */
 .movie-gallery {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 2rem;
-    margin-top: 2rem;
+    gap: 1.5rem; /* smaller gap between images */
+    flex-wrap: nowrap; /* NO wrapping */
+    overflow-x: auto; /* allow horizontal scroll if needed */
+    padding: 1rem 0;
 }
 
 .movie-gallery img {
@@ -87,11 +88,6 @@ main section {
 
 .movie-gallery img:hover {
     transform: scale(1.05);
-}
-
-/* Force line breaks after 4 posters */
-.movie-gallery img:nth-child(4) {
-    margin-right: 100%;
 }
 /* Footer */
 footer {
