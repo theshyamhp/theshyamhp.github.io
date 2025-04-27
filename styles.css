@@ -1,177 +1,46 @@
-/* FireFlix - styles.css for Figma UI */
+/* FireFlix styles.css */
 /* Reset and Base Styles */
 * {
     box-sizing: border-box;
 }
-   body {
-        background-color: #1c1c1c;
-        font-family: Arial, sans-serif;
-        color: #b5a56a;
-        text-align: center;
-        margin: 0;
-        padding: 0;
-    }
 
-    header, footer, main {
-        width: 90%;
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-
-    img {
-        display: block;
-        margin: 0.5rem auto;
-        width: 150px;
-        height: auto;
-        border-radius: 5px;
-    }
-
-    nav ul {
-        list-style: none;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        gap: 30px;
-        background-color: #111;
-    }
-
-    nav ul li {
-        display: inline-block;
-    }
-
-    nav ul li a {
-        text-decoration: none;
-        color: #b5a56a;
-        font-weight: bold;
-        font-size: 1.1rem;
-        padding: 1rem;
-    }
-
-    nav ul li a:hover, nav ul li a.active {
-        border-bottom: 2px solid #b5a56a;
-    }
-
-    h1, h2 {
-        margin: 1rem 0;
-    }
-
-    main section {
-        margin: 2rem 0;
-    }
-
-    .movie-gallery {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 2rem;
-        margin-top: 2rem;
-    }
-
-    .movie-gallery img {
-        width: 180px;
-        height: auto;
-        transition: transform 0.3s ease;
-    }
-
-    .movie-gallery img:hover {
-        transform: scale(1.05);
-    }
-
-    footer p {
-        margin: 2rem 0 1rem 0;
-        font-size: 0.9rem;
-    }
 body {
-    background-color: #1c1c1c; /* Very dark background */
+    background-color: #1c1c1c; /* dark background */
     font-family: Arial, sans-serif;
-    color: #b5a56a; /* Gold/light brown text */
+    color: #b5a56a; /* goldish text */
+    text-align: center;
     margin: 0;
     padding: 0;
 }
-<style>
-    body {
-        text-align: center;
-        background-color: #1c1c1c; /* dark background (optional) */
-        color: #b5a56a; /* matching font color */
-        font-family: Arial, sans-serif;
-    }
 
-    header, footer, main {
-        width: 90%;
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-
-    img {
-        display: block;
-        margin: 0.5rem auto;
-        width: 150px; /* control image size */
-        height: auto;
-        border-radius: 5px;
-    }
-
-    nav ul {
-        list-style: none;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        gap: 30px;
-    }
-
-    nav ul li {
-        display: inline-block;
-    }
-
-    nav ul li a {
-        text-decoration: none;
-        color: #b5a56a;
-        font-weight: bold;
-        font-size: 1.1rem;
-    }
-
-    nav ul li a:hover {
-        border-bottom: 2px solid #b5a56a;
-    }
-
-    ul {
-        list-style: none;
-        padding: 0;
-    }
-
-    ul li {
-        margin: 10px 0;
-    }
-
-    h1, h2 {
-        margin: 1rem 0;
-    }
-
-    footer p {
-        margin: 2rem 0 1rem 0;
-        font-size: 0.9rem;
-    }
-</style>
-
-header {
-    display: flex;
-    align-items: center;
-    padding: 1rem;
-    background-color: #111;
+/* Layout Containers */
+header, footer, main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
+/* Logo */
 header img {
-    height: 80px;
-    margin-right: 20px;
+    display: block;
+    margin: 1rem auto 0.5rem;
+    width: 80px;
+    height: auto;
 }
 
+/* Navigation Bar */
 nav ul {
     list-style: none;
-    display: flex;
-    gap: 30px;
-    margin: 0;
     padding: 0;
-    flex-grow: 1;
-    align-items: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #111;
+    gap: 30px;
+}
+
+nav ul li {
+    display: inline-block;
 }
 
 nav ul li a {
@@ -179,6 +48,8 @@ nav ul li a {
     color: #b5a56a;
     font-weight: bold;
     font-size: 1.1rem;
+    padding: 1rem;
+    display: inline-block;
 }
 
 nav ul li a:hover,
@@ -186,115 +57,81 @@ nav ul li a.active {
     border-bottom: 2px solid #b5a56a;
 }
 
-/* Search Box */
-header input[type="search"] {
-    margin-left: auto;
-    padding: 5px;
-    border: none;
-    background-color: #eee;
+/* Main Titles */
+h1, h2 {
+    margin: 2rem 0 1rem;
 }
 
-/* Main Content Styles */
-main {
-    padding: 2rem;
+/* Sections */
+main section {
+    margin: 3rem 0;
 }
 
-/* Form Section */
-form {
-    max-width: 500px;
-    margin-top: 2rem;
-}
-
-form label {
-    display: block;
-    margin-top: 1rem;
-    font-size: 1.3rem;
-    font-weight: bold;
-}
-
-form select,
-form input[type="email"],
-form textarea {
-    width: 100%;
-    margin-top: 0.5rem;
-    padding: 0.75rem;
-    border: none;
-    background-color: #ccc;
-    font-size: 1rem;
-}
-
-form button {
-    margin-top: 1.5rem;
-    padding: 0.75rem 2rem;
-    font-size: 1.1rem;
-    background-color: #b5a56a;
-    border: none;
-    color: black;
-    cursor: pointer;
-}
-
-form button:hover {
-    background-color: #a38f4b;
-}
-
-/* Sidebar Text (Sign Up Section) */
-aside {
-    margin-top: 3rem;
-    text-align: right;
-    color: #b5a56a;
-    font-size: 2rem;
-    font-weight: bold;
-    line-height: 1.2;
-}
-
-aside a {
-    display: block;
-    margin-top: 1rem;
-    font-size: 1rem;
-    color: blue;
-}
-
-/* Section Titles */
-h2 {
-    color: #b5a56a;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-}
-
-/* Movie Section (Home Page) */
+/* Movie Galleries */
 .movie-gallery {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 2rem;
-    margin-bottom: 3rem;
+    margin-top: 2rem;
 }
 
 .movie-gallery img {
     width: 180px;
     height: auto;
-    border-radius: 5px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
 }
 
-/* Movie Sections */
-.section {
-    background-color: #2c2c2c;
-    padding: 1rem;
-    border-radius: 10px;
-    margin-top: 2rem;
+.movie-gallery img:hover {
+    transform: scale(1.05);
 }
 
-/* Highly Rated List */
-ol {
+/* Footer */
+footer {
+    margin-top: 3rem;
+    padding: 1rem 0;
+}
+
+footer p {
+    font-size: 0.9rem;
     color: #b5a56a;
-    font-size: 1rem;
-    line-height: 1.8;
 }
 
-/* Genre Dropdown (Highly Rated Page) */
-.genre-select {
+/* Forms (Optional if you have Contact page) */
+form {
+    max-width: 600px;
+    margin: 2rem auto;
+    text-align: left;
+}
+
+form label {
+    display: block;
     margin-top: 1rem;
-    padding: 0.5rem;
-    background-color: #ccc;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.5rem;
     border: none;
+    background-color: #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    margin-top: 1.5rem;
+    padding: 0.8rem 2rem;
+    background-color: #b5a56a;
+    color: black;
     font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #a38f4b;
 }
